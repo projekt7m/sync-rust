@@ -1,0 +1,16 @@
+[package]
+name = "p7m-sync"
+version = "0.1.0"
+authors = ["tech@p7m.de"]
+description = "# API to communicate data changes with  This is the REST API of the P7M services, that can be used to get notified when data in the system changes, or to send notifications that data has changed."
+license = "Apache-2.0"
+repository = "https://github.com/projekt7m/sync-rust"
+edition = "2021"
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_json = "^1.0"
+serde_repr = "^0.1"
+url = "^2.5"
+uuid = { version = "^1.8", features = ["serde", "v4"] }
+reqwest = { version = "^0.12", default-features = false, features = ["json", "multipart", "rustls-tls"] }
