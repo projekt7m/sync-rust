@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **object_type** | **String** | The type of object that got changes (base URL without ID) | 
 **object_id** | [**uuid::Uuid**](uuid::Uuid.md) | The ID of the object that got changes | 
 **modification_type** | [**models::ModificationType**](ModificationType.md) | The type of modification that had been made to the object | 
+**part** | **Vec<String>** | Identification of the part inside the object that got changes | 
+**part_modification** | Option<[**models::ModificationType**](ModificationType.md)> | Type of the modification that was done on the part | [optional]
 **actor_id** | [**uuid::Uuid**](uuid::Uuid.md) | The ID of the actor that performed the modification | 
 **last_change** | **String** | The time when the modification happened | 
 
